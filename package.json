@@ -1,0 +1,28 @@
+{
+  "name": "leetcode_js",
+  "version": "1.0.0",
+  "description": "leetCode",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc",
+    "lint": "tslint -c tslint.json *.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shiyangzhaoa/leetCode_js.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "shiyangzhaoa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shiyangzhaoa/leetCode_js/issues"
+  },
+  "homepage": "https://github.com/shiyangzhaoa/leetCode_js#readme",
+  "devDependencies": {
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.2"
+  }
+}
