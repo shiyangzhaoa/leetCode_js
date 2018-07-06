@@ -16,21 +16,11 @@
 // 1. 用数组写的，不符合标准
 
 var addTwoNumbers = function(l1, l2) {
-    const len1 = l1.length;
-    const len2 = l2.length;
-    let maxArr, minArr;
-    if (len1 > len2) {
-        maxArr = l1;
-        minArr = l2;
-    } else {
-        maxArr = l2;
-        minArr = l1;
-    }
+    const maxLen = l1.length > l2.length ? l1.length : l2.length;
     let t = 0;
     const newArr = [];
-    const len = maxArr.length;
-    for(let i = 0; i <len; i++ ) {
-      const sum = maxArr[i] + (minArr[i] || 0) + t;
+    for(let i = 0; i <maxLen; i++ ) {
+      const sum = (l1[i] || 0) + (l2[i] || 0) + t;
       if (sum > 9) {
           newArr[i] = sum % 10;
           t = 1;
@@ -39,7 +29,7 @@ var addTwoNumbers = function(l1, l2) {
           t = 0;
       }
     }
-    if (t === 1) newArr[len] = 1;
+    if (t === 1) newArr[maxLen] = 1;
   
     return newArr;
 };
