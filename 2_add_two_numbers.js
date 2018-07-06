@@ -49,7 +49,8 @@ var addTwoNumbers = function(l1, l2) {
 // addTwoNumbers([4, 6, 2], [5, 1, 9, 4, 6])
 // [9, 7, 1, 5, 6]
 
-2. 正常版本，摘自网络（不想写这个了=，=b）
+// 2. 正常版本，摘自网络（不想写这个了=，=b）
+
 var addTwoNumbers = function(l1, l2) {
     var result_list = null;
     var cur_node = null;
