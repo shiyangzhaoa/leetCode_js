@@ -16,7 +16,7 @@ const letterCombinations = (digits: string): string[] => {
   let strArr = digits.split('');
   let result: string[] = numArr[strArr[0]];
   strArr.shift();
-  strArr = strArr.map(s => numArr[s]);
+  strArr = strArr.map((s: string) => numArr[s]);
 
   void function fn(arr: string[], rst: string[]) {
     if (arr.length) {
@@ -63,5 +63,5 @@ const letterCombinations1 = (digits: string) => {
     });
     ans = arr;
   });
-  return ans ? ans : []
+  return ans ? ans : [];
 };

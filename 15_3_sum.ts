@@ -1,7 +1,7 @@
 const threeSum = (nums: number[]): any[] => {
   if (nums.length < 3) {
     return [];
-  };
+  }
   nums = nums.sort((a, b) => a - b);
   if (nums[0] > 0 || nums[nums.length - 1] < 0) {
     return [];
