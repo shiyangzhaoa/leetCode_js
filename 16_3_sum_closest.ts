@@ -1,4 +1,4 @@
-const threeSumClosest = function(nums: number[], target: number): number {
+const threeSumClosest = (nums: number[], target: number): number => {
   nums = nums.sort((a, b) => a - b);
   let diff = Infinity;
   let result = 0;

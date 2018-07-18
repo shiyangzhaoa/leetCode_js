@@ -22,3 +22,10 @@ const longestCommonPrefix = (strs) => {
     return str;
 };
 // Emmmmmm, 性能超过30%。。。。有毛病，又提交了一次，然后超过了73%。。。
+// 这块我是感觉比较奇怪，看前面高性能都是先找到数组中最短长度的字符串，然后遍历这个最短的字符串，
+// 我刚开始其实也是这样处理的 ，但感觉也不算最优解，毕竟在刚开始就需要遍历一遍数组，但是我上面的写法也有点不好，打个比方
+// ['qwertyuigdgfhdgfh', 'qwertyuigdgfhdgfh', 'qwertyuigdgfhdgfh', '']，对于这种数组，我前几次每次遍历数组的时候，
+// 都需要遍历'qwertyuigdgfhdgfh'整个字符串，到''才会停止，
+// 但相反，['', 'qwertyuigdgfhdgfh', 'qwertyuigdgfhdgfh', 'qwertyuigdgfhdgfh']这种就明显不需要先遍历一遍求最短字符串了
+// 或者['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', ...]这种，先遍历一遍也不是很好
+// Emmm...

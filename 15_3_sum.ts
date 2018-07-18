@@ -1,4 +1,4 @@
-const threeSum = function(nums: number[]): any[] {
+const threeSum = (nums: number[]): any[] => {
   if (nums.length < 3) {
     return [];
   };
@@ -15,7 +15,7 @@ const threeSum = function(nums: number[]): any[] {
     let left = i + 1;
     let right = nums.length - 1;
     // 这尼玛，又忘了有这个骚操作
-    let target = -nums[i];
+    const target = -nums[i];
     
     while (left < right) {
       const sum = nums[left] + nums[right];
